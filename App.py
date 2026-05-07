@@ -3,7 +3,7 @@ from textblob import TextBlob
 from generator import generate_poetry
 
 # --- UI Configuration ---
-st.set_page_config(page_title="Soul Poet AI", layout="centered", page_icon="✒️")
+st.set_page_config(page_title="Sentiment based poet", layout="centered", page_icon="✒️")
 
 
 def inject_custom_design(sentiment_score):
@@ -143,7 +143,7 @@ with st.sidebar:
     st.markdown("## About Poet")
     st.markdown("""
     <div class="info-box">
-        <b>Soul Poet AI</b> is an advanced NLP-driven utility that leverages 
+        <b>Sentiment based poet</b> is an advanced NLP-driven utility that leverages 
         machine learning to weave your current emotions into artistic poetry.
         <br><br>
         Our primary objective is to harmonize human sentiment with generative 
@@ -171,7 +171,7 @@ with st.sidebar:
     st.divider()
 
     # 5. Developer Badge (Styled like your screenshot)
-    st.markdown('<div class="dev-badge">Developer: Arpit Thakur</div>', unsafe_allow_html=True)
+    st.markdown('<div class="dev-badge">Developer: Arpit Thakur , Hansika bhati , Shambhavi</div>', unsafe_allow_html=True)
 
     if st.button("Clear Creative History"):
         st.session_state.history = []
